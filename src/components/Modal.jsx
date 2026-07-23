@@ -11,7 +11,12 @@ export default function Modal({ title, children, onClose }) {
       }} animate={{
         opacity: 1,
         y: 0
-      }}>
+        }}
+        exit={{
+          opacity: 0,
+          y: 30
+        }}
+      >
         <h2>{title}</h2>
         {children}
       </motion.dialog>
