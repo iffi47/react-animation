@@ -57,7 +57,7 @@ export default function NewChallenge({ onDone }) {
           <input ref={deadline} type="date" name="deadline" id="deadline" />
         </p>
 
-        <motion.ul id="new-challenge-images" variants={{ visible: { transition: { delayChildren: stagger(0.5) } } }}>
+        <motion.ul id="new-challenge-images" variants={{ visible: { transition: { delayChildren: stagger(0.05) } } }}>
           {images.map((image) => (
             <motion.li
               variants={{
