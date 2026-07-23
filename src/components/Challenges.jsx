@@ -40,6 +40,7 @@ export default function Challenges() {
         challenges={filteredChallenges}
         onSelectType={handleSelectType}
         selectedType={selectedType}
+        // badgeCaption={10}
       >
         <AnimatePresence mode='wait'>
           {displayedChallenges.length > 0 && (
